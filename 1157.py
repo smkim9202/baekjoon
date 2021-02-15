@@ -1,3 +1,6 @@
+words= input().upper()
+alphabet = list(set(words))
+
 cnt_li = []
 for i in alphabet:
     cnt = words.count(i)
