@@ -1,17 +1,11 @@
-A = input()
-B = input()
+x = int(input())
+y = int(input())
 
-A = int(A)
-B = int(B)
-
-
-if 0 < A:
-    if 0 < B:
-        print(1)
-    else:
-        print(4)
-else:
-    if 0 < B:
-        print(2) 
-    else:
-        print(3)
+if 0 < x and 0 < y:
+    print(1)
+elif 0 > x and 0 < y:
+    print(2)
+elif 0 > x and 0 > y:
+    print(3)
+elif 0 < x and 0 > y:
+    print(4)
