@@ -1,17 +1,10 @@
-H, M = input().split()
+H, M = map(int, input().split())
 
-H = int(H)
-M = int(M)
+alarm = (H * 60 + M) - 45
 
-t = H * 60 + M - 45
 
-if t % 60 == 0:
-    if t//60 == -1:
-        print(23, 0)
-    else:
-        print(t//60, 0)
+if alarm // 60 == -1:
+    print(23, alarm % 60)
 else:
-    if t//60 == -1:
-        print(23, t%60)
-    else:
-        print(t//60, t%60)
+    print(alarm // 60, alarm % 60)
+
